@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="klasse.css"/>
+    
+<title>KuK Crowdfunding Mockup</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Navbar</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+    <div id="menuline">
+      <img src="https://chris-kuk.github.io/Logo+Name.png" width="120px"></img> 
+    
+    
+    <button class="mainmenu">F1</button>
+    <button class="mainmenu">F2</button>
+    <button class="mainmenu" onclick="registerpopup()">Registrierung</button>
+<button class="mainmenu" onclick="loginpopup()">Anmeldung</button>
+    </div> 
+  <div><img id="teachpic" src="https://chris-kuk.github.io/Background_Frontpage.jpg"/></div>
+ <div id="loginpopupbox"> 
+<form name="login" action="" method="post" onsubmit="loginSubmit()">
+<center>E-Mail:</center>
+<center><input name="email" size="14" /></center>
+<center>Passwort:</center>
+<center><input name="password" type="password" size="14" /></center>
+<center><input type="submit" name="submit" value="login" /></center>
+</form> 
+  </div>
+   <div id="registerpopupbox"> 
+     
+<form name="register" action="" method="post" onsubmit="registerSubmit()">
+<div id="registerleft">  
+<ul id="registerlist">  
+<li>Vorname:
+  <input name="givenname" size="14" /></li>
+<li>Nachname:
+  <input name="surname" size="14"/></li>
+<li>E-Mail:
+  <input name="email" size="14"></li> 
+<li>Passwort:
+  <input name="password" type="password" size="14" /></li>
+<li>Passwort:
+  <input name="passwordcheck" type="password" size="14" /></li>
+  <li><input type="checkbox" size="14" name="teacher" /> ich bin Lehrer/in</li>
+  <li><input type="submit" name="submit" value="register" /></li>
+  </ul>  
+  </div>
+  <div id="registerright"><p>Profilbild</p><input type="file" name="profilepic" id="profilepic"></input></div>
+</form> 
+  </div>
+ <div id="therest"></div>
+ <script type="text/javascript" src="all.js"/>
+ </body>
+
+
+</html>
+
+
+
