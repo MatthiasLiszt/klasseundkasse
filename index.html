@@ -7,20 +7,50 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 <title>KuK Crowdfunding Mockup</title>
+<style> /*CSS*/
+#backgroundLP {
+    opacity: 0.85;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+     z-index: -1}
+#textbackgroundLP {position: absolute;
+	max-width: 80%;
+   height: auto;
+	top: 12%;
+	left: 10%;
+	border-radius: 3px;
+    opacity: 0.75;
+    filter: alpha(opacity=50); /* For IE8 and earlier */}
+#titleLP{  position: absolute;
+  
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;}
+    
+#subtitleLP{position: absolute;
+top: 26%;
+width: 100%;
+text-align: center;
+font-size:17px;
+font-weight: bold;}
+</style>
   </head>
     <body>
-    <nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand"><img src="https://chris-kuk.github.io/Logo+Name.png" width="120px"></img></a>
-    <div>
-    <button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="button" data-toggle="modal" data-target="#myLogin">Login</button>
+    
+ <nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand"><img src="https://Chris-KuK.github.io/LOGO+NAME.png" width="120px"></img></a>
+    
+<div>
+<button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="button" data-toggle="modal" data-target="#myLogin">Login</button>
     <button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="button" data-toggle="modal" data-target="#myRegister">Registrieren</button>
-    </div>
-</nav>
- <div class="container">
-  <div class="jumbotron">
-    <img id="teachpic" src="https://chris-kuk.github.io/Background_Frontpage.jpg"/>
-     </div>
 </div>
+</nav>
+<p>
+<img src="https://Chris-KuK.github.io/Background_Frontpage.png" alt="github.com"
+width="100%" height="%"
+id="backgroundLP">;       
+</p>
   
  <div id="loginpopupbox"> 
 <form name="login" action="" method="post">
@@ -112,6 +142,23 @@
       </div>
     </div>
   </div>
+</div>
+
+
+<p>
+<img src="https://Chris-KuK.github.io/text_back_LP.png" alt="github.com"
+width="80%" height="%"
+id="textbackgroundLP">;       
+</p>
+ 
+
+<div>
+
+<h1 id="titleLP">Investitionen in die Zukunft</h1>
+
+<p id="subtitleLP">Klasse & Kasse ist eine Crowdfunding-Plattform f&uuml;r Schulprojekte. 
+<a target="_blank" href="tryit.asp?filename=trycss_text">"Starte jetzt"</a> </p>
+
 </div>
   
  <script type="text/javascript" src="all.js"/>
