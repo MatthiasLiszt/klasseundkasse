@@ -2,6 +2,9 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="klasse.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 <title>KuK Crowdfunding Mockup</title>
   </head>
@@ -9,8 +12,8 @@
     <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand"><img src="https://chris-kuk.github.io/Logo+Name.png" width="120px"></img></a>
     <div>
-    <button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="button">Login</button>
-    <button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="button">Registrieren</button>
+    <button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="button" data-toggle="modal" data-target="#myLogin">Login</button>
+    <button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="button" data-toggle="modal" data-target="#myRegister">Registrieren</button>
     </div>
 </nav>
  <div class="container">
@@ -20,7 +23,7 @@
 </div>
   
  <div id="loginpopupbox"> 
-<form name="login" action="" method="post" onsubmit="loginSubmit()">
+<form name="login" action="" method="post">
 <center>E-Mail:</center>
 <center><input name="email" size="14" /></center>
 <center>Passwort:</center>
@@ -51,7 +54,66 @@
 </form> 
   </div>
  <div id="therest"></div>
- 
+
+ <div class="modal fade" id="myLogin" role="dialog" aria-labelledby="myLoginLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+         </button>
+      </div>
+      <div class="modal-footer">
+       <center>
+       <form name="login" action="projectmanagement.html" method="post" >
+      <p>E-Mail:
+      <input name="email" " /></p>  
+       <p>Passwort:
+       <input name="password" type="password"  /></p>
+       <input type="submit" name="submit" value="login" />
+</form> 
+   
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myRegister" role="dialog" aria-labelledby="myRegisterLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+         </button>
+      </div>
+      <div class="modal-footer">
+       <form name="register" action="" method="post" >
+<div >  
+<ul id="myRegisterlist" style="list-style-type:none;">  
+<li>Vorname:
+  <input name="givenname" size="14" /></li>
+<li>Nachname:
+  <input name="surname" size="14"/></li>
+<li>E-Mail:
+  <input name="email" size="14"></li> 
+<li>Passwort:
+  <input name="password" type="password" size="14" /></li>
+<li>Passwort:
+  <input name="passwordcheck" type="password" size="14" /></li>
+  <li><input type="checkbox" size="14" name="teacher" /> ich bin Lehrer/in</li>
+  <li><input type="submit" name="submit" value="register" /></li>
+  </ul>  
+  </div>
+  <div ><p>Profilbild</p><input type="file" name="profilepic" id="profilepic"></input></div>
+</form> 
+   
+      </div>
+    </div>
+  </div>
+</div>
+  
  <script type="text/javascript" src="all.js"/>
  </body>
 
