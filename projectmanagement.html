@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+<title>Projektmanagement</title>
+
+<style>
+#getprojects{
+ background-color: grey;
+ width:70vw;
+ height: 70vh;
+ position: absolute;
+ right: 10vw;
+ top: 5vh;
+}
+.coolproject{
+ float: left; 
+ margin: 5px;
+ background-color: green;
+}
+
+#newproject{
+ background-color: orange; 
+ 
+}
+</style>
+</head> 
+
+<body>
+
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">delete</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">update</button>       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+         </button>  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="getprojects">
+&nbsp;
+
+<div class="coolproject" ><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Project 1
+<img src="https://2.bp.blogspot.com/-y1CXT5PNXsI/Vy38xjIMY3I/AAAAAAACAas/TErCI_Ip92MxbN183USXMG9uAk421HiEwCLcB/s1600/TW270019.png"></button></div>
+<div class="coolproject" onclick="projectpopup(2)" >Project 2
+<img src="https://s3.amazonaws.com/files.enjin.com/456025/site_logo/avatar.png"/></div>
+<div class="coolproject" onclick="projectpopup(3)" >Project 3
+<img src="https://s3.amazonaws.com/files.enjin.com/456025/site_logo/avatar.png"/></div>
+
+<div class="coolproject" id="newproject" onclick="projectpopup(0)">New Project
+<img  width="64px" src="https://images.clipartof.com/small/1420021-Clipart-Of-A-Cartoon-Black-And-White-Lineart-Chubby-Crazy-Pig-Flying-Royalty-Free-Vector-Illustration.jpg"/>
+</div>
+
+</div>
+
+
+<script>
+function projectpopup(id){
+ alert("altering project "+id);
+ console.log("clicked project "+id);
+}
+</script>
+</body></html>
