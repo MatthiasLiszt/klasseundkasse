@@ -59,7 +59,7 @@
 <div class="coolproject" onclick="projectpopup(3)" >Project 3
 <img src="https://s3.amazonaws.com/files.enjin.com/456025/site_logo/avatar.png"/></div>
 
-<div class="coolproject" id="newproject" onclick="projectpopup(0)">New Project
+<div class="coolproject" id="newproject" onclick="newproject()">New Project
 <img  width="64px" src="https://images.clipartof.com/small/1420021-Clipart-Of-A-Cartoon-Black-And-White-Lineart-Chubby-Crazy-Pig-Flying-Royalty-Free-Vector-Illustration.jpg"/>
 </div>
 
@@ -70,6 +70,10 @@
 function projectpopup(id){
  alert("altering project "+id);
  console.log("clicked project "+id);
+}
+
+function newproject(){
+ window.open('projectside.html');
 }
 </script>
 </body></html>
