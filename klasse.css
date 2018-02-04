@@ -50,11 +50,10 @@
     box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.13);
     -moz-box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.13);
     -webkit-box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.13);
+    visibility: hidden;
 }
 
 
-<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-<style type="text/css">
 .form-style-10{
     width:450px;
     padding:30px;
